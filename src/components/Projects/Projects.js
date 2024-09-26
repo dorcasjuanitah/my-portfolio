@@ -41,21 +41,9 @@ function Projects() {
               title="EVENTS MANAGEMENT SYSTEM"
               description="Designed to streamline the process of organizing and managing events. 
               The system will feature user registration and authentication, 
-              allowing registered users to create and manage multiple events."
+              allowing registered users to create and manage events."
               ghLink="https://github.com/Desma-2000/Event-Management-System"
-              demoLink="https://blogs.soumya-jit.tech/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="MOVIE STREAMING PLATFORM"
-              description="An online movie streaming platform similar to Netflix that 
-              has a lists of all the movies that the eser is able to watch, rate and leave a comment"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
@@ -64,11 +52,25 @@ function Projects() {
               imgPath={leaf}
               isBlog={false}
               title="PERSONAL PORTFOLIO"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
+              description="Portfolio Website, curated showcase of my work and skills as a software developer."
+              ghLink="https://github.com/dorcasjuanitah/Portfolio-2"
               demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
+
+          {/* <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={editor}
+              isBlog={false}
+              title="MOVIE STREAMING PLATFORM"
+              description="An online movie streaming platform similar to Netflix that 
+              has a lists of all the movies that the eser is able to watch, rate and leave a comment"
+              ghLink="https://github.com/soumyajit4419/Editor.io"
+              // demoLink="https://editor.soumya-jit.tech/"              
+            />
+          </Col> */}
+
+          
 
           {/* <Col md={4} className="project-card">
             <ProjectCard

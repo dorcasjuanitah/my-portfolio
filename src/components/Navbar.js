@@ -36,6 +36,10 @@ function NavBar() {
       fixed="top"
       expand="md"
       className={navColour ? "sticky" : "navbar"}
+      style={{
+        backgroundColor: navColour ? "#6B8E23" : "transparent", // Earthy green when scrolled
+        transition: "background-color 0.3s ease",
+      }}
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
@@ -54,50 +58,32 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)} style={{ color: "#F5F5DC" }}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
+              <Nav.Link as={Link} to="/about" onClick={() => updateExpanded(false)} style={{ color: "#F5F5DC" }}>
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
+              <Nav.Link as={Link} to="/project" onClick={() => updateExpanded(false)} style={{ color: "#4cce535e" }}>
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Projects
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
+              <Nav.Link as={Link} to="/resume" onClick={() => updateExpanded(false)} style={{ color: "#4cce535e" }}>
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
 
+            {/* Uncomment if you want to include the blog link */}
             {/* <Nav.Item>
-              <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <Nav.Link href="https://soumyajitblogs.vercel.app/" target="_blank" rel="noreferrer" style={{ color: "#F5F5DC" }}>
                 <ImBlog style={{ marginBottom: "2px" }} /> Blogs
               </Nav.Link>
             </Nav.Item> */}
@@ -107,8 +93,9 @@ function NavBar() {
                 href="https://github.com/dorcasjuanitah"
                 target="_blank"
                 className="fork-btn-inner"
+                style={{ backgroundColor: "#8FBC8F", color: "#F5F5DC" }} // Button color
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
+                <CgGitFork style={{ fontSize: "1.2em" }} />
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
             </Nav.Item>
